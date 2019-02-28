@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "da847e4b-6027-4cfb-bec3-fbb4cb7e8217",
+		"name": "Rss Reader Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Correct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"rssLink\": \"http://www1.cbn.com/app_feeds/rss/news/rss.php?section=world\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rssfeed/onehundredmostcommonwords",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rssfeed",
+						"onehundredmostcommonwords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wrong key",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"rssLink\": \"http://www1.cbn.com/app_feeds/rss/news/rss.php?section=world\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rssfeed/onehundredmostcommonwords",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rssfeed",
+						"onehundredmostcommonwords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Not an URL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"rssLink\": \"http://www1.cbn.com/app_feeds/rss/news/rss.php?section=world\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rssfeed/onehundredmostcommonwords",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rssfeed",
+						"onehundredmostcommonwords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Not a rss link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"rssLink\": \"http://www1.cbn.com/app_feeds/rss/news/rss.php?section=world\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rssfeed/onehundredmostcommonwords",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rssfeed",
+						"onehundredmostcommonwords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Empty value",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"rssLink\": \"http://www1.cbn.com/app_feeds/rss/news/rss.php?section=world\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rssfeed/onehundredmostcommonwords",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rssfeed",
+						"onehundredmostcommonwords"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
